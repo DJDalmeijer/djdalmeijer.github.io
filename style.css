@@ -345,6 +345,11 @@ textarea {
 .flex-item-1 a {
 	word-wrap: break-word;
 }
+
+.flex-item-1 p {
+	word-wrap: break-word;
+}
+
 /* end of flexbox "voorbeeld projecten" */
 
 /*desktop styles*/
