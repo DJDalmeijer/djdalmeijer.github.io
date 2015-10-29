@@ -5,7 +5,7 @@ body {
 	margin: auto;
 	margin-top: 1em;
 	padding: .7em;
-	max-width: 65em;
+	/*max-width: 65em;*/
 	font-size: 1em;	
 }
 
@@ -246,7 +246,7 @@ footer section:nth-of-type(4){
 
 /*Form styles*/
 form {
-	width: 90%;
+	/*width: 90%;*/
 }
 
 legend {
@@ -336,7 +336,7 @@ textarea {
 
 .flex-item-1 {
     padding: 2em;
-    width: 40%;
+    /*width: 40%;*/
     height: relative;
     box-shadow: .35em .35em .7em #999999;
     border: 0.2em solid #FFCC00;
@@ -348,7 +348,7 @@ textarea {
 
 /*desktop styles*/
 
-@media screen and (min-width: 68.75em){
+@media screen and (max-width: 68.75em){
 	
 header h1 {
 	margin: 0.1em;
