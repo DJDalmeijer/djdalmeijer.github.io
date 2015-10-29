@@ -84,7 +84,7 @@ input[type=search] {
 
 /* mediaquery for mobile navigation */
 
-@media all and (max-width: 45.5em) {
+@media all and (max-width: 37.5em) {
   .navigation {
     flex-flow: column wrap;
     padding: 0;
@@ -348,7 +348,7 @@ textarea {
 
 /*desktop styles*/
 
-@media screen and (min-width: 68.75em){
+@media screen and (max-width: 68.75em){
 	
 header h1 {
 	margin: 0.1em;
