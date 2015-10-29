@@ -222,9 +222,7 @@ footer h1 {
 	font-size: 1.5em;
 }
 
-footer h2, h4, p {
-	margin-left: 1.5em;
-}
+
 
 footer a {
 	color: white;
@@ -253,7 +251,6 @@ legend {
 	font-size: 1.0em;
 	color: #FFCC00;
 	font-weight: bold;
-	border-bottom: 0.1em solid #FFCC00;
 }
 
 /** To hide the fieldset **/
@@ -266,7 +263,6 @@ fieldset {
 	padding: .5em;
 	margin-bottom: 1em;
 	border: none;
-	margin-left: 1em;
 }
 
 fieldset + fieldset {
@@ -291,12 +287,14 @@ input[type="radio"] {
 	outline: none;
 	cursor: pointer;
 	width: 4%;
+	box-shadow: none;
 }
 
 input[type="checkbox"] {
 	outline: none;
 	cursor: pointer;
 	width: 4%;
+	box-shadow: none;
 }
 
 /* end attribute selector */
