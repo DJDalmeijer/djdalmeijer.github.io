@@ -167,7 +167,6 @@ a:hover {
 
 .flex-item {
     padding: 3em;
-    width: 50%;
     max-width: 450px;
     border: 0.2em solid #FFCC00;
     box-shadow: .35em .35em .7em #999999;
