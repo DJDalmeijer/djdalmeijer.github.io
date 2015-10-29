@@ -206,8 +206,9 @@ aside h3 {
 aside h2 {
 	font-size: 1.5em;
 	margin-bottom: .3em;
-	/*width: 20em;*/
+	width: 20em;
 	padding-bottom: .1em;
+	background-color: #000;
 }
 
 /*Footer styles*/
