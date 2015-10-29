@@ -167,7 +167,7 @@ a:hover {
 
 .flex-item {
     padding: 3em;
-    width: 25em;
+    width: 50%;
     border: 0.2em solid #FFCC00;
     box-shadow: .35em .35em .7em #999999;
     margin: 0.3em;
@@ -335,7 +335,7 @@ textarea {
 
 .flex-item-1 {
     padding: 2em;
-    width: 25em;
+    width: 40%;
     height: relative;
     box-shadow: .35em .35em .7em #999999;
     border: 0.2em solid #FFCC00;

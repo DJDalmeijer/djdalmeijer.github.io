@@ -37,6 +37,7 @@ function onBodyLoad(){
 	// Select DOM elements
 	var radioButtons = $( "input[name='submit-for']:radio" );
 
+	//var anchors = $( "a[href='*.pdf'")
 	// Listen to changes of radio button
 	radioButtons.change(onRadioButtonChange);
 }
