@@ -361,7 +361,7 @@ header h1 {
 
 aside > section {
 	/*width: 40%;*/
-	/*margin-right: 5em;*/
+	margin-right: 5em;
 }
 
 .navigation {
