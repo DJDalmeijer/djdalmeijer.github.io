@@ -340,6 +340,7 @@ textarea {
     border: 0.2em solid #FFCC00;
     margin: 1em;
     font-size: 1em;
+    text-align: center;
 }
 
 /* end of flexbox "voorbeeld projecten" */
