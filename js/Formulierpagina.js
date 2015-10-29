@@ -1,71 +1,52 @@
-/*
-old code
-function onBodyLoad(){
-	var fieldSetStage = $( "#stage" );
-	var fieldSetProject = $( "#project" );
-	var radioButtons = $( "input[name='submit-for']:radio" );
+$( document ).ready(function() {
 
-	radioButtons.change(function(){
-		  var checkedRadioBox = $( "input[name='submit-for']:checked" );
-		  var selectedValue = checkedRadioBox.val();
+	// Define global variables
+	var fieldSetProject, fieldSetStage;
 
-		  if(selectedValue == "stage"){
-			fieldSetStage.removeClass("fieldset-hidden");
-		  	fieldSetProject.addClass("fieldset-hidden");
-		  }
+	/**
+	* Init will be triggerd as soon as the document is ready.
+	*/
+	function init(){
 
-		  if(selectedValue == "project"){
-			fieldSetStage.addClass("fieldset-hidden");
-		  	fieldSetProject.removeClass("fieldset-hidden");
-		  }
-	});
-}
-*/
+		// Set global DOM elements  | #ID  | adds value to variable
+		fieldSetStage = $( "#stage" );
+		fieldSetProject = $( "#project" );
 
-// Define global variables
-var fieldSetProject, fieldSetStage;
+		// Select DOM elements | searching for type input radio button
+		var radioButtons = $( "input[name='submit-for']:radio" );
 
-/**
-* onBodyLoad will be triggerd as soon as the body is completely loaded.
-*/
-function onBodyLoad(){
-
-	// Set global DOM elements
-	fieldSetStage = $( "#stage" );
-	fieldSetProject = $( "#project" );
-
-	// Select DOM elements
-	var radioButtons = $( "input[name='submit-for']:radio" );
-
-	//var anchors = $( "a[href='*.pdf'")
-	// Listen to changes of radio button
-	radioButtons.change(onRadioButtonChange);
-}
-
-/**
-* onRadioButtonChange will be triggered when the selected radio buttons change
-*/
-function onRadioButtonChange(){
-
-	// Find the selected radio button
-	var checkedRadioBox = $( "input[name='submit-for']:checked" );
-
-	// Get the value of the selected radio button
-	var selectedValue = checkedRadioBox.val();
-
-	// Determine what to do with the selected value
-	switch(selectedValue){
-
-		// When the value is "stage"  show the fieldset of "stage" and hide the fieldset of "project"
-		case "stage":
-		fieldSetStage.removeClass("fieldset-hidden");
-		fieldSetProject.addClass("fieldset-hidden");
-		break;
-
-		// When the value is "project"  show the fieldset of "project" and hide the fieldset of "stage"
-		case "project":
-		fieldSetStage.addClass("fieldset-hidden");
-		fieldSetProject.removeClass("fieldset-hidden");
-		break;
+		// Listen to changes of radio button
+		radioButtons.change(onRadioButtonChange);
 	}
-}
+
+	/**
+	* onRadioButtonChange will change when the selected radio buttons change
+	*/
+	function onRadioButtonChange(){
+
+		// Find the selected radio button
+		var checkedRadioBox = $( "input[name='submit-for']:checked" );
+
+		// Get the value of the selected radio button
+		var selectedValue = checkedRadioBox.val();
+
+		// Determine what to do with the selected value
+		switch(selectedValue){
+
+			// When the value is "stage"  show the fieldset of "stage" and hide the fieldset of "project"
+			case "stage":
+			fieldSetStage.removeClass("fieldset-hidden");
+			fieldSetProject.addClass("fieldset-hidden");
+			break;
+
+			// When the value is "project"  show the fieldset of "project" and hide the fieldset of "stage"
+			case "project":
+			fieldSetStage.addClass("fieldset-hidden");
+			fieldSetProject.removeClass("fieldset-hidden");
+			break;
+		}
+	}
+
+	// Initialize javascript
+    init();
+});
