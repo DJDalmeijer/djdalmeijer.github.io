@@ -6,7 +6,7 @@ body {
 	margin-top: 1em;
 	padding: .7em;
 	max-width: 65em;
-	font-size: 2em;	
+	font-size: 1em;	
 }
 
 header img {
@@ -113,10 +113,6 @@ video {
 
 article {
 	margin-top: 2em
-}
-
-article p {
-	font-size: 2em;
 }
 
 section > h3 {
