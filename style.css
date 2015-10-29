@@ -206,7 +206,7 @@ aside h3 {
 aside h2 {
 	font-size: 1.5em;
 	margin-bottom: .3em;
-	/*width: 20em;*/
+	/*width: 20em;*/  /*zorgt voor een fout*/
 	padding-bottom: .1em;
 }
 
@@ -355,8 +355,10 @@ header h1 {
 	padding: 0.1em;	
 }
 
+/* dit zorgt voor een onjuiste aside op mobile*/
+
 aside > section {
-	width: 40%;
+	/*width: 40%;*/
 	/*margin-right: 5em;*/
 }
 
