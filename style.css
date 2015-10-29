@@ -340,6 +340,7 @@ textarea {
     border: 0.2em solid #FFCC00;
     margin: 0.3em;
     font-size: 1em;
+    margin-right: 1em;
 }
 
 .flex-item-1 a {
