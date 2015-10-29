@@ -357,13 +357,6 @@ header h1 {
 	padding: 0.1em;	
 }
 
-/* dit zorgt voor een onjuiste aside op mobile*/
-
-aside > section {
-	/*width: 40%;*/
-	margin-right: 5em;
-}
-
 .navigation {
 	border-radius: 5px 20px 5px;
 }
