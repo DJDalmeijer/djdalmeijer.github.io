@@ -145,59 +145,29 @@ a:hover {
 	text-decoration: underline;
 }
 
-/* Flexbox "meer lezen" */
-
-.related {
-	list-style: none;
-	margin-bottom: 2em;
-	display: flex;
-	flex-wrap: wrap;
+main {
+	max-width: 60em;
 }
-
-.related-header {
-	width: 100%;
-}
-
-@media all and (max-width: 37.5em) {
-  .related {
-    flex-flow: column wrap;
-    padding: 0;
-    justify-content: flex-around;
-  }
-}
-
-.flex-item {
-	flex-grow: 2; /* default 0 */
-    padding: 3em;
-    max-width: 50em;
-    border: 0.2em solid #FFCC00;
-    box-shadow: .35em .35em .7em #999999;
-    margin: 0.3em;
-    font-size: 1em;
-    text-align: center;
-}
-
-/* end of flexbox "meer lezen" */
 
 
 article > section {
 	max-width: 60em;
 }
+
+
 /*Aside styles*/
 
 @media all and (min-width: 85em) {
 aside {
-	display: block;
 	float: right;
 	position: relative;
-	top: -305em;
-	left: -10em;
+	top: -130em;
+	left: -2em;
 	width: 20em;
-	max-height: 100em;
-	margin-right: 1em;
-  	margin: 0;
-}
-
+	padding: 1em;
+	border: 0.2em solid #FFF;
+	box-shadow: .35em .35em .7em #999999;
+	}
 }
 
 aside > section {
@@ -227,13 +197,17 @@ aside h2 {
 
 article > footer {
 	max-width: 40em;
+	position: relative;
+    top: 0em;
 	background-color: #FFCC00;
 	padding: 0.2em;
 	border-radius: 5px 20px 5px;
 }
 
 footer {
-	max-width: 70em;
+	max-width: 90em;
+	position: relative;
+    top: 40em;
 	background-color: #FFCC00;
 	padding: 0.2em;
 	border-radius: 5px 20px 5px;
@@ -356,7 +330,7 @@ textarea {
     max-width: 200px;
     height: relative;
     box-shadow: .35em .35em .7em #999999;
-    border: 0.2em solid #FFCC00;
+    border: 0.2em solid #FFF;
     margin: 0.3em;
     font-size: 1em;
 }
@@ -384,9 +358,7 @@ article footer {
 	box-shadow: 0 8px 6px -6px black;
 }
 
-footer {
-	max-width: 90em;
-}
+
 /* transition footer*/
 
 article footer {
