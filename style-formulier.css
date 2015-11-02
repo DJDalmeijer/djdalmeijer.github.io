@@ -165,8 +165,7 @@ aside {
 	left: -2em;
 	width: 20em;
 	padding: 1em;
-	border: 0.2em solid #FFF;
-	box-shadow: .35em .35em .7em #999999;
+	max-height: 0em;
 	}
 }
 
@@ -195,6 +194,35 @@ aside h2 {
 
 /*Footer styles*/
 
+/*flexbox footer*/
+
+.footer {
+	list-style: none;
+	margin-bottom: 2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-around;
+	background-color: #FFCC00;
+}
+
+@media all and (max-width: 60em) {
+  .footer {
+    flex-flow: column wrap;
+    padding: 0;
+    max-width: 90em;
+  }
+}
+
+.footer-1 {
+	padding: 1em;
+	background-color: #FFCC00;
+	max-width: 20em;
+    margin: 0.3em;
+    font-size: 1em;
+}
+
+/*end flexbox footer*/
+
 article > footer {
 	max-width: 40em;
 	position: relative;
@@ -207,7 +235,7 @@ article > footer {
 footer {
 	max-width: 90em;
 	position: relative;
-    top: 40em;
+    top: 26em;
 	background-color: #FFCC00;
 	padding: 0.2em;
 	border-radius: 5px 20px 5px;
@@ -356,6 +384,10 @@ header h1 {
 
 article footer {
 	box-shadow: 0 8px 6px -6px black;
+}
+
+footer {
+	clear:both;
 }
 
 

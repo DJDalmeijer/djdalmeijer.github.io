@@ -194,8 +194,7 @@ aside {
 	left: -2em;
 	width: 20em;
 	padding: 1em;
-	border: 0.2em solid #FFF;
-	box-shadow: .35em .35em .7em #999999;
+	max-height: 0em;
 	}
 }
 
@@ -224,6 +223,36 @@ aside h2 {
 
 /*Footer styles*/
 
+
+/*flexbox footer*/
+
+.footer {
+	list-style: none;
+	margin-bottom: 2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-around;
+	background-color: #FFCC00;
+}
+
+@media all and (max-width: 60em) {
+  .footer {
+    flex-flow: column wrap;
+    padding: 0;
+    max-width: 90em;
+  }
+}
+
+.footer-1 {
+	padding: 1em;
+	background-color: #FFCC00;
+	max-width: 20em;
+    margin: 0.3em;
+    font-size: 1em;
+}
+
+/*end flexbox footer*/
+
 article > footer {
 	max-width: 60em;
 	background-color: #FFCC00;
@@ -232,8 +261,7 @@ article > footer {
 }
 
 footer {
-	max-width: 70em;
-	background-color: #FFCC00;
+	max-width: 90em;
 	padding: 0.2em;
 	border-radius: 5px 20px 5px;
 }
@@ -254,11 +282,6 @@ footer ul ul li {
 	padding-bottom: .5em;
 	font-weight: 100;
 } 
-
-footer section:nth-of-type(4){
-	text-align: center;
-}
-
 
 /*Form styles*/
 form {
@@ -384,7 +407,7 @@ article footer {
 }
 
 footer {
-	max-width: 90em;
+	clear:both;
 }
 /* transition footer*/
 
